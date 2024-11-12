@@ -1,0 +1,140 @@
+.register-sec {
+  background: var(--backgroundcolor);
+  padding: 116px 80px 75px 80px;
+  .inner {
+    max-width: 895px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    h5 {
+      max-width: 670px;
+      margin: 0px auto;
+      text-align: center;
+      font-style: italic;
+    }
+    .register-card {
+      padding: 50px;
+      background-color: var(--backgroundcolor);
+      background-image: url("/assets/images/registerback.webp");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      // border-radius: 21px;
+      // border: 2px solid #ebebeb;
+      // background: linear-gradient(
+      //   111deg,
+      //   rgba(206, 46, 153, 0.17) -20.4%,
+      //   rgba(97, 45, 163, 0.5) 19.63%,
+      //   rgba(70, 41, 150, 0.5) 45.82%,
+      //   rgba(81, 40, 149, 0.5) 73.48%,
+      //   rgba(206, 46, 153, 0.5) 119.32%
+      // );
+      // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      // backdrop-filter: blur(12.949999809265137px);
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 100%;
+      input,
+      textarea {
+        border-radius: 10px;
+        background: #f9f9f9;
+        padding: 12px 20px;
+        color: var(--dark-color);
+        outline: none;
+        border: none;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 162.5%;
+        &::placeholder {
+          opacity: 0.5;
+        }
+      }
+      textarea {
+        min-height: 142px;
+      }
+      .name-div {
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+        input {
+          width: 50%;
+        }
+      }
+      button {
+        border-radius: 6px;
+        border: 1px solid var(--Primary-1, #9b28a8);
+        background: var(
+          --2-color-grad,
+          linear-gradient(90deg, #9208f3 6.5%, #9b28a8 94.5%)
+        );
+        padding: 16px 32px;
+        width: 100%;
+        color: #fff;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .register-sec {
+    padding: 20px;
+    .inner {
+      row-gap: 10px;
+      align-items: center;
+      .register-card {
+        max-width: 500px;
+        padding: 20px 15px;
+        row-gap: 15px;
+        width: 100%;
+        background-image: unset;
+        row-gap: 15px;
+        width: 100%;
+        border-radius: 21px;
+        border: 2px solid #ebebeb;
+        background: linear-gradient(
+          111deg,
+          rgba(206, 46, 153, 0.17) -20.4%,
+          rgba(97, 45, 163, 0.5) 19.63%,
+          rgba(70, 41, 150, 0.5) 45.82%,
+          rgba(81, 40, 149, 0.5) 73.48%,
+          rgba(206, 46, 153, 0.5) 119.32%
+        );
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(12.949999809265137px);
+        input,
+        textarea {
+          padding: 10px;
+          font-size: 15px;
+          border-radius: 10px;
+          line-height: 120%;
+          &::placeholder {
+            opacity: 0.5;
+          }
+        }
+        textarea {
+          min-height: 100px;
+        }
+        .name-div {
+          flex-direction: column;
+          row-gap: 15px;
+          input {
+            width: 100%;
+          }
+        }
+        button {
+          padding: 16px 20px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

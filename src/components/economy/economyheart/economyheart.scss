@@ -1,0 +1,190 @@
+.economyheart-sec {
+  background: var(--backgroundcolor);
+  padding: 30px 80px;
+  position: relative;
+  max-width: 100vw;
+  overflow-x: hidden;
+  .main {
+    max-width: 1130px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url("/assets/images/ecobrainback.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 180px;
+    .brain-img {
+      width: 100%;
+      height: 100%;
+      max-width: 767px;
+      max-height: 684px;
+      object-fit: cover;
+      animation: brightnessAnimation 3s infinite;
+      animation-timing-function: ease;
+    }
+    h5 {
+      font-style: italic;
+    }
+    .ist,
+    .second {
+      position: absolute;
+      border-radius: 18.423px;
+      border: 1px solid #fff;
+      background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(153, 153, 153, 0.26) 100%
+      );
+      box-shadow: 0px 0px 53.4px 0px rgba(255, 0, 171, 0.26);
+      backdrop-filter: blur(38.8814811706543px);
+      width: 491px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      z-index: 2;
+    }
+    .ist {
+      top: 77px;
+      left: -94px;
+      &::after {
+        content: url("/assets/images/istafter.webp");
+        position: absolute;
+        right: -76px;
+        top: 95px;
+      }
+    }
+    .second {
+      top: 101px;
+      right: -94px;
+      &::after {
+        content: url("/assets/images/secondafter.webp");
+        position: absolute;
+        left: -76px;
+        top: 95px;
+      }
+    }
+  }
+  .left-back {
+    position: absolute;
+    left: -240px;
+    bottom: 205px;
+  }
+  .right-back {
+    position: absolute;
+    right: -240px;
+    bottom: 264px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .economyheart-sec {
+    padding: 80px 0px;
+    .main {
+      max-width: 1000px;
+      padding: 100px;
+      .brain-img {
+        max-width: 700px;
+        max-height: 600px;
+      }
+      .ist,
+      .second {
+        width: 400px;
+        padding: 20px;
+        row-gap: 15px;
+        p {
+          font-size: 15px;
+        }
+      }
+      .ist {
+        top: 30px;
+      }
+      .second {
+        top: 80px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .economyheart-sec {
+    padding: 100px 0px;
+    .main {
+      max-width: 800px;
+      padding: 100px;
+      .brain-img {
+        max-width: 667px;
+        max-height: 584px;
+      }
+      .ist,
+      .second {
+        width: 350px;
+        padding: 15px;
+        row-gap: 10px;
+        p {
+          font-size: 14px;
+        }
+      }
+      .ist {
+        top: 0px;
+        left: -30px;
+      }
+      .second {
+        top: 60px;
+        right: -30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .economyheart-sec {
+    background: var(--backgroundcolor);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    .main {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .brain-img {
+        display: none;
+      }
+
+      .ist,
+      .second {
+        position: unset;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .ist {
+        &::after {
+          display: none;
+        }
+      }
+      .second {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@keyframes brightnessAnimation {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}

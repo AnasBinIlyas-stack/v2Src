@@ -1,0 +1,29 @@
+.bridging-sec {
+  background: url("/assets/images/bridging.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 250px 80px;
+  .inner {
+    max-width: 1290px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bridging-sec {
+    padding: 80px;
+    .inner {
+      max-width: 1000px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .bridging-sec {
+    padding: 20px;
+    .inner {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.stakingbanner-sec {
+  background-image: url("/assets/images/hero.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: var(--backgroundcolor);
+  padding: 80px 80px 30px 80px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  .banner-inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0px auto;
+    width: 100%;
+
+    .images-div {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      column-gap: 20px;
+      width: 100%;
+      img {
+        width: 100%;
+        max-width: 370px;
+        max-height: 420px;
+        height: 100%;
+        object-fit: cover;
+        &:first-child {
+          margin-bottom: 10px;
+        }
+        &:nth-child(2) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1600px) {
+  .stakingbanner-sec {
+    .banner-inner {
+      row-gap: 30px;
+      .images-div {
+        img {
+          max-width: 260px;
+          max-height: 296px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .stakingbanner-sec {
+    padding: 20px;
+    background-size: cover;
+    align-items: center;
+    height: 80vh;
+    .banner-inner {
+      row-gap: 20px;
+      .images-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 20px;
+        width: 100%;
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:nth-child(2) {
+            margin-bottom: 0px;
+          }
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

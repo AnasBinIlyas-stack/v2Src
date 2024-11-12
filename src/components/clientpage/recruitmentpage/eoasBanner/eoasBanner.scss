@@ -1,0 +1,136 @@
+.recruitment-banner {
+  padding: 0px 80px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/images/hero.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: var(--backgroundcolor);
+  .left-sword {
+    transform: translateY(-30px);
+    transition: all 2s ease-in-out;
+  }
+  .right-sword {
+    transform: translate(155%, -30px);
+    transition: all 2s ease-in-out;
+  }
+  h1 {
+    transform: translate(-37%, 60%);
+    transition: all 2s ease-in-out;
+  }
+  h5 {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+  }
+  &:hover {
+    .left-sword {
+      transform: translateY(0);
+    }
+    .right-sword {
+      transform: translate(0, 0);
+    }
+    h1 {
+      transform: translate(0, 0);
+    }
+    h5 {
+      opacity: 1;
+    }
+  }
+  .content {
+    max-width: 1140px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    .left {
+      width: 40%;
+
+      .left-inner {
+        position: relative;
+        width: 100%;
+        .right-sword {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        /* Define the keyframes for the right sword animation */
+
+        /* Apply the animations to the images */
+      }
+    }
+    .right {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        text-transform: uppercase;
+      }
+      h5 {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .recruitment-banner {
+    h1 {
+      transform: translate(-50%, 60%);
+      transition: all 2s ease-in-out;
+    }
+    .content {
+      max-width: 900px;
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .recruitment-banner {
+    padding: 0px 20px;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+    height: 80vh;
+    align-items: center;
+    .left-sword {
+      transform: translateY(0);
+    }
+    .right-sword {
+      transform: translate(0, 0);
+    }
+    h1 {
+      transform: translate(0, 0);
+    }
+    h5 {
+      opacity: 1;
+    }
+    .content {
+      max-width: 1140px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      .left {
+        width: 100%;
+        display: flex;
+        max-width: 300px;
+      }
+      .right {
+        width: 100%;
+        row-gap: 10px;
+        max-width: 400px;
+      }
+    }
+  }
+}

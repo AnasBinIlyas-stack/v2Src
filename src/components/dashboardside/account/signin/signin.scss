@@ -1,0 +1,250 @@
+.account {
+  min-height: 100vh;
+  padding: 1.75rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .bg_img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+  }
+  .logo {
+    position: absolute;
+    width: 171px;
+    height: 101px;
+    z-index: 10;
+    left: 45px;
+    top: 35px;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .form-wrapper {
+      background-image: url("../../../../assets/account/login\ bg.webp");
+      width: 546.558px;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      height: 670px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-family: Expansiva;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: normal;
+        padding-bottom: 70px;
+      }
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+        input {
+          padding-left: 16px;
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.22);
+          outline: none;
+          border: none;
+          height: 59px;
+          color: #c0c0c0;
+
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .inputs {
+          outline: none;
+          border: none;
+          height: 59px;
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.22);
+          display: flex;
+          justify-content: space-evenly;
+          button {
+            background: transparent;
+            outline: none;
+            border: none;
+          }
+          input {
+            width: 85%;
+            color: #c0c0c0;
+            padding-left: 16px;
+            height: 59px;
+            font-size: 20px;
+            background: transparent;
+          }
+        }
+        .remember {
+          display: flex;
+          justify-content: end;
+        }
+        .notRecieve {
+          display: flex;
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+.btn_secondary,
+.btn_primary {
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+.btn_secondary {
+  width: 443px;
+  border: 2px solid var(--2-color-grad, #9208f3);
+  background: transparent;
+}
+
+.btn_primary {
+  width: 443px;
+  border: 1px solid var(--Primary-1, #9b28a8);
+  background: var(
+    --2-color-grad,
+    linear-gradient(90deg, #9208f3 6.5%, #9b28a8 94.5%)
+  );
+}
+
+.mt-32 {
+  margin-top: 8rem;
+}
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+.gap_32 {
+  gap: 32px;
+}
+.mt_60 {
+  margin-top: 60px;
+}
+.medium {
+  font-weight: 600;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.flex {
+  display: flex;
+}
+.gap-7 {
+  gap: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.underline {
+  text-decoration: underline;
+}
+.text-white {
+  color: white;
+}
+.btn-primary {
+  width: 100%;
+  height: 2.75rem;
+  background-color: #000;
+}
+.fw-normal {
+  font-weight: normal;
+}
+.m-auto {
+  margin: auto;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.text-blue-600 {
+  color: #2563eb;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
+
+@media (max-width: 600px) {
+  .account {
+    .logo {
+      width: 120px; // Adjust logo size for mobile
+      height: auto; // Maintain aspect ratio
+      left: 20px; // Adjust positioning
+      top: 20px; // Adjust positioning
+    }
+    .container {
+      .form-wrapper {
+        padding: 80px 20px 80px 20px;
+        background-image: none;
+        background-color: #cf10d21a;
+        stroke-width: 3px;
+        stroke: #d10ed1;
+        backdrop-filter: blur(17.649999618530273px);
+        border: 2px solid #d10ed1;
+        border-radius: 10px;
+        height: auto;
+        width: 100%;
+        h3 {
+          font-size: 24px; // Smaller font size for mobile
+          padding-bottom: 30px; // Adjust padding
+        }
+
+        .flex-col {
+          width: 100%;
+          input {
+            font-size: 16px; // Smaller input font size
+            width: 100%;
+          }
+
+          .inputs {
+            input {
+              font-size: 16px;
+              width: 100%; // Full width on mobile
+            }
+            button {
+              padding-right: 12px;
+            }
+          }
+          .remember {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .btn_primary,
+  .btn_secondary {
+    width: 100%;
+    font-size: 16px;
+  }
+  .mt_60 {
+    margin-top: 5px;
+  }
+}

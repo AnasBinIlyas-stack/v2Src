@@ -1,0 +1,220 @@
+.recruitmentlands {
+  background-color: var(--backgroundcolor);
+  background-image: url("/assets/images/wildlandsback.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 80px;
+  .content {
+    padding-top: 74px;
+    max-width: 1320px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 74px;
+    align-items: center;
+    justify-content: center;
+
+    .bottom {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      .ist,
+      .second {
+        position: absolute;
+        border-radius: 18.423px;
+        border: 1px solid #fff;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(153, 153, 153, 0.26) 100%
+        );
+        backdrop-filter: blur(38.8814811706543px);
+        padding: 20px 27px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 6px;
+        width: 491px;
+
+        h4,
+        p {
+          text-align: center;
+          line-height: normal;
+        }
+      }
+      img {
+        max-width: 443.068px;
+        max-height: 646px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        animation: brightnessAnimation 3s infinite;
+        animation-timing-function: ease;
+      }
+      .ist {
+        top: 50px;
+        left: 35px;
+        &::after {
+          content: url("/assets/images/wildlands/ist.webp");
+          position: absolute;
+          right: -75px;
+          top: 20px;
+        }
+      }
+
+      .second {
+        bottom: 0px;
+        right: 20px;
+        &::after {
+          content: url("/assets/images/wildlands/recruit-second.webp");
+          position: absolute;
+          left: -76px;
+          bottom: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .recruitmentlands {
+    padding: 80px;
+    .content {
+      max-width: 1100px;
+      padding-top: 50px;
+      row-gap: 50px;
+      .bottom {
+        .ist,
+        .second {
+          padding: 15px 20px;
+          width: 420px;
+          p {
+            font-size: 15px;
+          }
+        }
+        img {
+          max-width: 400px;
+          max-height: 570px;
+        }
+        // .ist {
+        //   left: -70px;
+        //   &::after {
+        //     top: 40px;
+        //   }
+        // }
+        // .second {
+        //   right: -70px;
+        //   &::after {
+        //     left: -76px;
+        //     top: 50px;
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .recruitmentlands {
+    .content {
+      max-width: 800px;
+      .bottom {
+        .ist,
+        .second,
+        .third,
+        .forth,
+        .fifth {
+          padding: 15px 20px;
+          width: 330px;
+          h4 {
+            font-size: 18px;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .recruitmentlands {
+    padding: 20px;
+    background-image: unset;
+    .content {
+      padding-top: 20px;
+      width: 100%;
+      row-gap: 20px;
+
+      .top {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+        .ist,
+        .second,
+        .third,
+        .forth,
+        .fifth {
+          position: unset;
+          border-radius: 18.423px;
+          border: 1px solid #fff;
+          background: linear-gradient(
+            270deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(153, 153, 153, 0.26) 100%
+          );
+          backdrop-filter: blur(38.8814811706543px);
+          padding: 15px 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 6px;
+          width: 100%;
+
+          h4,
+          p {
+            text-align: center;
+            line-height: normal;
+          }
+        }
+        img {
+          max-width: 400px;
+          max-height: unset;
+          object-fit: cover;
+        }
+        .ist,
+        .second,
+        .third,
+        .forth,
+        .fifth {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes brightnessAnimation {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}

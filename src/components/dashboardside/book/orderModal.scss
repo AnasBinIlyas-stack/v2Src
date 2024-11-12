@@ -1,0 +1,193 @@
+.order-modal {
+  .ant-modal-content {
+    border-radius: 18.42px;
+    border: 2px solid #8246ce;
+    background: var(
+      --linear,
+      linear-gradient(
+        90deg,
+        rgba(130, 70, 206, 0.5) 0%,
+        rgba(130, 70, 206, 0.03) 100%
+      )
+    );
+    box-shadow: 0px -16px 41.1px -18px #cf10d2;
+    backdrop-filter: blur(12.949999809265137px);
+    color: #fff;
+    button {
+      color: white;
+      background: var(
+        --linear,
+        linear-gradient(
+          90deg,
+          rgba(130, 70, 206, 0.5) 0%,
+          rgba(130, 70, 206, 0.03) 100%
+        )
+      );
+    }
+    .ant-modal-header {
+      background: transparent;
+
+      .ant-modal-title {
+        text-align: center;
+        text-align: center;
+        font-feature-settings: "liga" off, "clig" off;
+        font-family: Expansiva;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 18px */
+        background: var(
+          --Gradient,
+          linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .ant-modal-body {
+      .body {
+        .top {
+          padding-top: 36px;
+          .left,
+          .right {
+            // min-width: 270px;
+            width: 50%;
+            padding: 10.226px 9.652px 4.268px 10.226px;
+            gap: 4.6px;
+            border-radius: 6.136px;
+            background: rgba(255, 255, 255, 0.06);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .p {
+              font-size: 14px;
+              font-weight: 600;
+              font-family: Inter;
+            }
+            p {
+              font-size: 12px;
+              font-weight: 500;
+              font-family: Inter;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 20px;
+          display: flex;
+          padding: 10.972px 11.32px 18.083px 10.972px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10.796px;
+          align-self: stretch;
+          border-radius: 6.583px;
+          background: rgba(255, 255, 255, 0.06);
+          .detail-i {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px 0;
+            .inner {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+          .t {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 17.315px 6.231px 17.315px 7.315px;
+            gap: 14.212px;
+            border-radius: 6.583px;
+            border: 0.585px solid rgba(79, 79, 79, 0.5);
+            width: 100%;
+            .first {
+              display: flex;
+              align-items: center;
+              img {
+                width: 60px;
+                height: 60px;
+                border-radius: 5.852px;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.smallp {
+  background: transparent;
+  color: #fff;
+  font-family: Nunito;
+  font-size: 9.509px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 9.509px; /* 100% */
+}
+
+.order-modal {
+  .form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding-top: 20px;
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #fff;
+      }
+
+      .input-field {
+        padding: 10px;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;
+        border-radius: 8px !important;
+        // border: 1px solid rgba(189, 189, 189, 0);
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+      }
+    }
+
+    .full-width {
+      grid-column: span 2; // Makes the address field span across two columns
+    }
+  }
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0;
+
+  .next-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      background: var(
+        --Gradient,
+        linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%)
+      );
+    }
+  }
+}

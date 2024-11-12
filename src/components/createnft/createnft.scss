@@ -1,0 +1,263 @@
+.createnft-sec {
+  //   height: 100vh;
+  background-image: url("../../../public/assets/images/nftmarketplace/createNft-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 80px;
+  .inner {
+    .content {
+      padding: 140px 88px;
+      max-width: 1320px;
+      width: 100%;
+      //   height: 1582px;
+      border-radius: 18.42px;
+      border: 4px solid #d10ed1;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12.949999809265137px);
+      .top {
+        .left {
+          width: 40%;
+          label {
+            cursor: pointer;
+            max-width: 416px;
+            width: 100%;
+            height: 416px;
+            border-radius: 6.884px;
+            border: 1.721px dashed #fff;
+            background: rgba(255, 255, 255, 0.1);
+            position: relative;
+            img {
+              width: 68.957px;
+              height: 68.957px;
+            }
+            &::after {
+              content: url("../../../public/assets/images/nftmarketplace/middle-line.png");
+              position: absolute;
+              top: -20px;
+              right: -90px;
+            }
+          }
+          p {
+            max-width: 422px;
+            width: 100%;
+          }
+        }
+        .right {
+          width: 60%;
+          padding-bottom: 90px;
+          input {
+            width: 100%;
+            padding: 13px 28px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            &::placeholder {
+              color: #fff;
+            }
+          }
+        }
+      }
+      .bottom {
+        margin-top: 77px;
+        p {
+          span {
+            color: #3d9fa4;
+          }
+        }
+        textarea {
+          padding: 13px 32px;
+          border-radius: 10px;
+          border: 1px solid #fff;
+          background: rgba(255, 255, 255, 0.08);
+          width: 100%;
+          min-height: 150px;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 500;
+          outline: none;
+          &::placeholder {
+            color: #fff;
+          }
+        }
+        .left-side {
+          width: 100%;
+          input {
+            max-width: 519px;
+            width: 100%;
+            padding: 13px 28px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            background: rgba(255, 255, 255, 0.08);
+            outline: none;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+        .right-side {
+          .skip-stream[type="checkbox"] {
+            position: relative;
+            padding: 0;
+            border: none;
+            width: 45px;
+            height: 22px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: #8b8090;
+            outline: none;
+            border-radius: 2rem;
+            cursor: pointer;
+            // box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+          }
+          .skip-stream[type="checkbox"]::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #fff;
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            transition: 0.5s;
+          }
+          .skip-stream[type="checkbox"]:checked::before {
+            transform: translateX(100%);
+            background: #fff;
+          }
+          .skip-stream[type="checkbox"]:checked {
+            background: #d10ed1;
+          }
+          .seletion {
+            .form-drop {
+              max-width: 519px;
+              width: 100%;
+              border-radius: 10px;
+              border: 1px solid #fff;
+              padding: 13px 28px;
+              background: rgba(255, 255, 255, 0.08);
+              outline: none;
+              color: #fff;
+              font-size: 15px;
+              font-weight: 500;
+              option {
+                color: #000;
+                font-size: 15px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .select-coin {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .createnft-sec {
+    padding: 140px 80px;
+    .inner {
+      .content {
+        padding: 50px 30px;
+        .top {
+          gap: 60px;
+          .left {
+            label {
+              &::after {
+                right: -40px;
+              }
+            }
+          }
+          .right {
+            max-width: 100%;
+          }
+        }
+        .bottom {
+          margin-top: 40px;
+          .left-side {
+            input {
+              max-width: 100%;
+            }
+          }
+          .right-side {
+            .seletion {
+              .form-drop {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .createnft-sec {
+    .inner {
+      .content {
+        .top {
+          .left {
+            label {
+              height: 330px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .createnft-sec {
+    padding: 100px 20px 50px 20px;
+    .inner {
+      gap: 20px;
+      .content {
+        padding: 30px 20px;
+        .top {
+          flex-direction: column;
+          gap: 20px;
+          .left {
+            width: 100%;
+            label {
+              height: 200px;
+              &::after {
+                display: none;
+              }
+            }
+          }
+          .right {
+            width: 100%;
+            padding-bottom: 0px;
+            input {
+              padding: 13px;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 20px;
+          textarea {
+            padding: 13px;
+          }
+          .supply {
+            flex-direction: column;
+            gap: 20px;
+            .right-side {
+              .seletion {
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+        .create-btn {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

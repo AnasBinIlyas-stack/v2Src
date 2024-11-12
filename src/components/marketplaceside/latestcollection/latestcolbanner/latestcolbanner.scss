@@ -1,0 +1,67 @@
+.collectionbanner-sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/images/hero.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: var(--backgroundcolor);
+  padding: 180px 80px 80px 80px;
+  .mobbanner-img {
+    display: none;
+  }
+  .banner-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .headings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 10px;
+      .banner-img {
+        max-width: 1212px;
+        max-height: 516px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .collectionbanner-sec {
+    padding: 80px;
+    .banner-inner {
+      .headings {
+        .banner-img {
+          max-width: 900px;
+          max-height: 400px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .collectionbanner-sec {
+    padding: 20px;
+    .mobbanner-img {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .banner-inner {
+      .headings {
+        .banner-img {
+          display: none;
+        }
+      }
+    }
+  }
+}

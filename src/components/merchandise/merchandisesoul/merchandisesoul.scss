@@ -1,0 +1,43 @@
+.merchandisesoul-sec {
+  padding: 80px;
+  background: var(--backgroundcolor);
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 35px;
+    max-width: 1088px;
+    margin: 0px auto;
+    img {
+      width: 258px;
+      height: 258px;
+      object-fit: cover;
+      animation: glowing 2s infinite ease-out;
+    }
+    @keyframes glowing {
+      0%,
+      100% {
+        filter: drop-shadow(0 0 10px #d10ed1);
+      }
+      50% {
+        filter: drop-shadow(0 0 20px #d10ed1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .merchandisesoul-sec {
+    padding: 20px;
+    background: var(--backgroundcolor);
+    .inner {
+      row-gap: 20px;
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.guildgamefi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--backgroundcolor);
+  // background-image: url("/assets/images/brainskeleton.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 80px;
+  position: relative;
+  z-index: 2;
+  .skeleton {
+    position: absolute;
+    top: -40px;
+    right: 30px;
+    z-index: 1;
+    max-width: 593px;
+    max-height: 500px;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .cardcomp-sec {
+    position: relative;
+    z-index: 2;
+    max-width: 1123px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .guildgamefi {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .guildgamefi {
+    padding: 20px;
+    background: var(--backgroundcolor);
+    .skeleton {
+      display: none;
+    }
+  }
+}

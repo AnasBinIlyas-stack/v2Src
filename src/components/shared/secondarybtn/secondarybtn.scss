@@ -1,0 +1,49 @@
+.secondarybtn-sec {
+  button {
+    color: #fff;
+    text-align: center;
+    font-family: Expansiva;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 500px;
+    border: 3px solid #be25f6;
+    padding: 20px 30px;
+    fill: rgba(207, 16, 210, 0.1);
+    stroke-width: 3px;
+    stroke: #d10ed1;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 13px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .secondarybtn-sec {
+    button {
+      font-size: 16px;
+      padding: 15px 20px;
+      column-gap: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .secondarybtn-sec {
+    button {
+      font-size: 15px;
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .secondarybtn-sec {
+    button {
+      font-size: 14px;
+    }
+  }
+}
+
+// ////////////////////////

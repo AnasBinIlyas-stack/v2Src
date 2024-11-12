@@ -1,0 +1,109 @@
+.canon {
+  padding: 50px 80px 100px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--backgroundcolor);
+  position: relative;
+  .content {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .bottom {
+      display: flex;
+      align-items: center;
+      gap: 128px;
+      margin-top: 30px;
+      width: 100%;
+      .left {
+        width: 50%;
+        mix-blend-mode: plus-lighter;
+        video {
+          max-width: 100%;
+        }
+        // img {
+        //   mix-blend-mode: plus-lighter;
+        //   width: 100%;
+        // }
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .cannon-sword {
+          max-width: 365px;
+          max-height: 67px;
+          margin-left: auto;
+        }
+        p {
+          line-height: normal;
+        }
+        p,
+        h3 {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+  .cannon-left {
+    position: absolute;
+    left: -360px;
+    top: 0;
+  }
+  .cannon-right {
+    position: absolute;
+    right: -360px;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .canon {
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content {
+      .bottom {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: unset;
+        width: 100%;
+        .left {
+          width: 100%;
+          display: flex;
+
+          video {
+            max-width: 400px;
+            width: 100%;
+            margin: 0px auto;
+          }
+        }
+        .right {
+          width: 100%;
+
+          gap: 10px;
+          img {
+            margin: 0px auto;
+            width: 100%;
+            height: 50px;
+            object-fit: contain;
+          }
+          p,
+          h4 {
+            text-align: center;
+          }
+          button {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

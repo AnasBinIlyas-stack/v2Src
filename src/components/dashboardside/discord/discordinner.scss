@@ -1,0 +1,585 @@
+.discord-inner-main {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  .discord-ranking {
+    width: 20%;
+    .right-side-content {
+      // max-width: 320px;
+      width: 100%;
+      padding: 15px;
+      height: calc(100vh - 140px);
+      min-height: 750px;
+      border-radius: 9.454px;
+      border: 1.576px solid #d10ed1;
+      background: linear-gradient(
+        97deg,
+        rgba(209, 14, 209, 0.25) 12.04%,
+        rgba(16, 163, 218, 0.25) 81.84%
+      );
+
+      overflow-x: scroll; /* Horizontal scrollbar */
+      /* Horizontal scrollbar styling */
+      &::-webkit-scrollbar {
+        height: 6px; /* Adjust the height of the horizontal scrollbar */
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba(209, 14, 209, 0.1);
+        border-radius: 9.454px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 1) 12.04%,
+          rgba(16, 163, 218, 1) 81.84%
+        );
+        border-radius: 50px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 0.9) 12.04%,
+          rgba(16, 163, 218, 0.9) 81.84%
+        );
+      }
+      /* Scrollbar styling for Firefox */
+      scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+      scrollbar-width: thin;
+      //   width: 254px;
+
+      .right-side-inner {
+        width: 100%;
+        min-width: 265px;
+        // height: 720px;
+        height: calc(100vh - 350px);
+        min-height: 650px;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        overflow-y: scroll;
+        /* Scrollbar styling */
+        &::-webkit-scrollbar {
+          width: 4px; /* Adjust the width of the scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background: rgba(
+            209,
+            14,
+            209,
+            0.1
+          ); /* Light gradient color on the track */
+          border-radius: 9.454px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 1) 12.04%,
+            rgba(16, 163, 218, 1) 81.84%
+          ); /* Match the gradient color */
+          border-radius: 50px;
+
+          border: 1px solid #d10ed1;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 0.9) 12.04%,
+            rgba(16, 163, 218, 0.9) 81.84%
+          ); /* Darker color on hover */
+        }
+
+        /* Scrollbar styling for Firefox */
+        scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+        scrollbar-width: thin;
+
+        .inner-content {
+          padding: 5px;
+          border-radius: 8px;
+          border: 1px solid #4f4f4f;
+          display: flex;
+          justify-content: space-between;
+          gap: 15px;
+          width: 100%;
+          .rank {
+            display: flex;
+            align-items: center;
+            min-width: 20px;
+          }
+          .player {
+            display: flex;
+            justify-content: start;
+            gap: 12px;
+            .left-content {
+              border-radius: 100%;
+              padding: 6px;
+              background: rgba(0, 8, 24, 0.42);
+              img {
+                width: 28px;
+                border-radius: 100%;
+                height: 26.698px;
+              }
+            }
+            .right-content {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              width: 100%;
+              img {
+                width: 15px;
+                height: 15px;
+              }
+            }
+          }
+          .score {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-width: 40px;
+          }
+        }
+        .hide-border {
+          border: none;
+        }
+        .start-chatting {
+          position: relative;
+          width: 100%;
+        }
+      }
+      .main {
+        padding: 10px 50px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        .p2 {
+          min-width: 110px;
+        }
+      }
+    }
+  }
+  .ai-chat {
+    display: flex;
+    gap: 30px;
+    // max-width: 1200px;
+    width: 80%;
+    // height: 870px;
+    height: calc(100vh - 140px);
+    min-height: 750px;
+    flex-shrink: 0;
+    border-radius: 9.454px;
+    border: 1.576px solid #d10ed1;
+    background: linear-gradient(
+      71deg,
+      rgba(209, 14, 209, 0.25) 25.07%,
+      rgba(16, 163, 218, 0.25) 76.26%
+    );
+
+    .recent-conversations {
+      max-width: 325px;
+      width: 100%;
+      // height: 870px;
+      height: calc(100vh - 140px);
+      min-height: 750px;
+      // padding: 10px;
+      border-radius: 9.454px;
+      border: 1px solid #d10ed1;
+      background: linear-gradient(
+        rgba(196, 217, 225, 0.25) 71deg,
+        rgba(209, 14, 209, 0.25) 25.07%,
+        rgba(16, 163, 218, 0.25) 76.26%
+      );
+      position: relative;
+      overflow-y: hidden;
+      overflow-x: scroll; /* Horizontal scrollbar */
+      /* Horizontal scrollbar styling */
+      &::-webkit-scrollbar {
+        height: 6px; /* Adjust the height of the horizontal scrollbar */
+      }
+      &::-webkit-scrollbar-track {
+        background: rgba(209, 14, 209, 0.1);
+        border-radius: 9.454px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 1) 12.04%,
+          rgba(16, 163, 218, 1) 81.84%
+        );
+        border-radius: 50px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 0.9) 12.04%,
+          rgba(16, 163, 218, 0.9) 81.84%
+        );
+      }
+      /* Scrollbar styling for Firefox */
+      scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+      scrollbar-width: thin;
+      p {
+        padding-left: 10px;
+      }
+      .outer {
+        width: 290px;
+        border-radius: 14px;
+        // background: rgba(0, 8, 24, 0.8);
+        background: rgba(0, 8, 24, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        margin: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background: white;
+        }
+        .text {
+          img {
+            width: 15px;
+            height: 15px;
+          }
+          .p1 {
+            font-weight: 700;
+            font-size: 14px;
+
+            span {
+              padding: 0 3px;
+            }
+          }
+          .p2 {
+            font-size: 11px;
+            font-weight: 300;
+          }
+        }
+      }
+      .recent {
+        height: 280px;
+        // height: 350px;
+        overflow-x: hidden;
+        overflow-y: scroll; /* Vertical scrollbar */
+
+        /* Apply vertical scrollbar */
+        &::-webkit-scrollbar {
+          width: 6px; /* Adjust the width of the vertical scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background: rgba(209, 14, 209, 0.1);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 1) 12.04%,
+            rgba(16, 163, 218, 1) 81.84%
+          );
+          border-radius: 50px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 0.9) 12.04%,
+            rgba(16, 163, 218, 0.9) 81.84%
+          );
+        }
+
+        /* Scrollbar styling for Firefox */
+        scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+        scrollbar-width: thin;
+      }
+      .general {
+        height: max-content;
+        overflow-y: scroll; /* Vertical scrollbar */
+
+        /* Apply vertical scrollbar */
+        &::-webkit-scrollbar {
+          width: 6px; /* Adjust the width of the vertical scrollbar */
+        }
+
+        &::-webkit-scrollbar-track {
+          background: rgba(209, 14, 209, 0.1);
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 1) 12.04%,
+            rgba(16, 163, 218, 1) 81.84%
+          );
+          border-radius: 50px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 0.9) 12.04%,
+            rgba(16, 163, 218, 0.9) 81.84%
+          );
+        }
+
+        /* Scrollbar styling for Firefox */
+        scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+        scrollbar-width: thin;
+      }
+      .bottom {
+        width: 302px;
+        border-radius: 14px;
+        // background: rgba(0, 8, 24, 0.8);
+        background: rgba(0, 8, 24, 0.4);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        margin: 10px;
+        position: absolute;
+        bottom: 30px;
+        .left {
+          display: flex;
+          align-items: center;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            background: white;
+          }
+        }
+        .setting {
+          display: flex;
+          justify-content: flex-end;
+          .file-img {
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #eeeaea;
+            border-radius: 100%;
+          }
+          img {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #141414;
+            background: #141414;
+          }
+        }
+      }
+    }
+    .chats {
+      // height: 850px;
+      height: calc(100vh - 180px);
+      min-height: 690px;
+      width: 100%;
+      padding-right: 50px;
+      // max-width: 550px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 16px;
+      overflow-y: scroll; /* Vertical scrollbar */
+
+      /* Apply vertical scrollbar */
+      &::-webkit-scrollbar {
+        width: 6px; /* Adjust the width of the vertical scrollbar */
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba(209, 14, 209, 0.1);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 1) 12.04%,
+          rgba(16, 163, 218, 1) 81.84%
+        );
+        border-radius: 50px;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 0.9) 12.04%,
+          rgba(16, 163, 218, 0.9) 81.84%
+        );
+      }
+
+      /* Scrollbar styling for Firefox */
+      scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+      scrollbar-width: thin;
+      .logo {
+        display: flex;
+        gap: 8px;
+      }
+      .msg {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 26px 0;
+        .inner-msg {
+          max-width: 450px;
+          width: 100%;
+          padding: 15px;
+          font-weight: 400;
+          font-size: 14px;
+          flex-shrink: 0;
+          border-radius: 14.361px;
+          background: rgba(0, 8, 24, 0.42);
+        }
+        .time {
+          padding: 2.5px 0 0 15px;
+        }
+      }
+      .start-chatting {
+        position: relative;
+        width: 100%;
+        // bottom: -56.5%;
+        input {
+          width: 100%;
+          border-radius: 9.454px;
+          background: rgba(0, 8, 24, 0.42);
+          padding: 11px 30px 11px 15px;
+          border: none;
+          outline: none;
+          color: #fff;
+          font-family: Inter;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          &::placeholder {
+            color: #cbcbcb;
+          }
+        }
+        .send-btn {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          background: transparent;
+          border: none;
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+.view-btn {
+  border-radius: 30px;
+  max-width: 120px;
+  width: 100%;
+  max-height: 35px;
+  background: linear-gradient(
+    97deg,
+    rgba(209, 14, 209, 0.25) 12.04%,
+    rgba(16, 163, 218, 0.25) 81.84%
+  );
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background: white;
+}
+
+@media screen and (max-width: 1400px) {
+  .discord-inner-main {
+    flex-direction: column;
+    .ai-chat {
+      width: 100%;
+      .recent-conversations {
+        overflow-x: scroll;
+        .recent {
+          height: 270px;
+        }
+        .general {
+          height: 350px;
+        }
+        // .bottom {
+        //   bottom: 65px;
+        // }
+      }
+    }
+    .discord-ranking {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .discord-inner-main {
+    .ai-chat {
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      padding: 0 10px;
+      .recent-conversations {
+        max-width: 100%;
+        .recent {
+          width: 100%;
+          height: 300px;
+        }
+        .general {
+          height: 300px;
+          width: 100%;
+        }
+        .outer {
+          width: 100%;
+        }
+
+        .bottom {
+          width: 100%;
+        }
+      }
+
+      .chats {
+        width: 100%;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.voice-channel-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  .member-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .member-name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .member-nickname {
+    font-size: 12px;
+    margin-left: 5px;
+    opacity: 0.7;
+  }
+}
+
+.member-status {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}

@@ -1,0 +1,63 @@
+.header-content {
+  width: 217px;
+  background-color: rgba(255, 255, 255, 0.1); // bg-white/10
+  border-radius: 9px;
+  border: 2px solid #d946ef; // border-fuchsia-600
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); // shadow
+  backdrop-filter: blur(26.3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  top: 132px;
+  right: 18px;
+  z-index: 1000;
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #d946ef;
+    margin-bottom: 11px;
+  }
+
+  .profile-name {
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 1.25rem; // text-xl
+    text-align: center;
+  }
+
+  .profile-options {
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); // border-t border-white/20
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+    .option {
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px 14px;
+      font-family: "Inter", sans-serif;
+      font-size: 0.875rem; // text-sm
+      color: white;
+    }
+
+    .wallet-btn-dashboard {
+      color: #fff;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: transparent;
+      border: none;
+      height: unset;
+      padding: 0px 10px;
+    }
+  }
+}

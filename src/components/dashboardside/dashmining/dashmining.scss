@@ -1,0 +1,89 @@
+.dash-mining {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  .mining-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .detail {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      .earning {
+        padding: 15px 35px;
+        // max-width: 361px;
+        width: 100%;
+        // height: 190px;
+        border-radius: 9.454px;
+        border: 1.576px solid #d10ed1;
+        background: linear-gradient(
+          97deg,
+          rgba(209, 14, 209, 0.25) 12.04%,
+          rgba(16, 163, 218, 0.25) 81.84%
+        );
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    .detail-graph {
+    }
+    .more-info {
+      button {
+        max-width: 156px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .dash-mining {
+    padding-right: 0;
+    .mining-content {
+      .detail {
+        .earning {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .dash-mining {
+    .mining-content {
+      .detail {
+        flex-direction: column;
+        .earning {
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .more-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .manual {
+          flex-direction: column;
+          gap: 20px !important;
+          div {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

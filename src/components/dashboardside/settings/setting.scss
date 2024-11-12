@@ -1,0 +1,273 @@
+.dashside-content {
+  .main-container {
+    margin-top: 100px;
+    width: 80%;
+    //   max-width: 1124px;
+    height: 77vh;
+    display: flex;
+    background: linear-gradient(
+      71deg,
+      rgba(209, 14, 209, 0.25) 25.07%,
+      rgba(16, 163, 218, 0.25) 76.26%
+    );
+    border-radius: 9.45px;
+    border: 2px solid #d946ef;
+    margin: 0 auto; // Center the container horizontally
+
+    .sidebar {
+      width: 278px;
+      // width: 28%;
+      height: 100%;
+      background: linear-gradient(
+        71deg,
+        rgba(209, 14, 209, 0.25) 25.07%,
+        rgba(16, 163, 218, 0.25) 76.26%
+      );
+      border-radius: 9.45px;
+      //   border: 1px solid #d946ef;
+      padding: 84px 15px 0 15px; // Adjusted to avoid absolute positioning
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+
+        .menu-item {
+          width: 100%;
+          height: 46px;
+          padding: 12px 15px;
+          border-radius: 35px;
+          border: 2px solid transparent;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          &.active {
+            border: 2px solid #d946ef;
+            color: #fff;
+          }
+          .icon {
+            width: 22px;
+            height: 22px;
+          }
+
+          .text {
+            color: white;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Inter", sans-serif;
+          }
+        }
+      }
+    }
+
+    .account-setting,
+    .password-setting {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .form {
+        display: flex;
+        flex-direction: column !important;
+        gap: 15px;
+        width: 100%;
+        padding-left: 63px;
+        padding-top: 71px;
+        .top {
+          input {
+            border-radius: 8px;
+          }
+          .input-group {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            gap: 8px;
+            //   justify-content: flex-start;
+            //   align-items: flex-start;
+
+            .label {
+              color: white;
+              font-size: 16px;
+              font-weight: 400;
+              font-family: Inter;
+            }
+
+            .input-field {
+              width: 100%;
+              max-width: 350px;
+              padding: 18px 16px;
+              background: rgba(255, 255, 255, 0.05);
+              border-radius: 8px;
+              border: 1px solid transparent;
+              color: white;
+              font-size: 15px;
+              font-weight: 400;
+              font-family: "Inter", sans-serif;
+
+              &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+        }
+        .bottom {
+          // padding-top: 50px;
+          display: flex;
+          input {
+            border-radius: 8px;
+          }
+          .input-group {
+            display: flex;
+            min-width: 300px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 8px;
+
+            .label {
+              color: white;
+              font-size: 16px;
+              font-weight: 400;
+              font-family: "Nunito Sans", sans-serif;
+            }
+
+            .input-field {
+              width: 100%;
+              max-width: 350px;
+              padding: 18px 16px;
+              background: rgba(255, 255, 255, 0.05);
+              border-radius: 8px;
+              border: 1px solid transparent;
+              color: white;
+              font-size: 15px;
+              font-weight: 400;
+              font-family: "Inter", sans-serif;
+
+              &::placeholder {
+                color: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+        }
+        .btn {
+          button {
+            border-radius: 9px;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            padding: 12px 20px;
+          }
+        }
+      }
+    }
+  }
+  .noti {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .drop-down {
+      width: 217px;
+      display: flex;
+      justify-content: space-between;
+      // gap: 20px;
+      border-radius: 8px;
+      background: rgba(130, 70, 206, 0.2);
+    }
+  }
+  h3 {
+    margin-left: 160px;
+    color: #fff;
+    padding: 25px 0;
+  }
+}
+@media screen and (max-width: 1660px) {
+  .dashside-content {
+    .main-container {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 1380px) {
+  .dashside-content {
+    .main-container {
+      width: 100%;
+      .sidebar {
+        min-width: 228px;
+        .menu {
+          .menu-item {
+            .text {
+            }
+          }
+        }
+      }
+      .account-setting,
+      .password-setting {
+        .form {
+          padding-left: 15px !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 30px 15px; // Reduced padding for smaller screens
+  }
+
+  .account-setting,
+  .password-setting {
+    padding: 20px;
+    .form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+
+  .sidebar {
+    padding: 15px;
+  }
+
+  .account-setting,
+  .password-setting {
+    .form {
+      gap: 10px;
+      .input-group {
+        .input-field {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.bgg {
+  background: var(
+    --Gradient,
+    linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%)
+  );
+}
+.p {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Inter;
+}

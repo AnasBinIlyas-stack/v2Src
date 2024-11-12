@@ -1,0 +1,50 @@
+.audio {
+  .top {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    z-index: 5;
+    p {
+      max-width: 602px;
+    }
+  }
+  .slider-sec {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+    .back-shadow {
+      position: absolute;
+      top: 0;
+      right: 40%;
+      background: #ad1aaf;
+      opacity: 0.5;
+      filter: blur(229.16665649414062px);
+      width: 480px;
+      height: 467px;
+      z-index: 1;
+    }
+  }
+  .explore {
+    margin-top: 46px;
+    .dashside-content {
+      padding: 0;
+      margin-left: unset;
+      margin-top: unset;
+      width: 100%;
+    }
+  }
+
+  .audio-purchased-text {
+    background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

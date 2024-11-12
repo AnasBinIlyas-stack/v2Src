@@ -1,0 +1,66 @@
+button {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .rotate-360 {
+    animation: rotateAnimation 2s linear infinite;
+  }
+
+  &.btn-primary {
+    color: #fff;
+    background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+    padding-top: 0.75rem; /* or 12px */
+    padding-bottom: 0.75rem;
+    border-radius: 1.5rem;
+  }
+  &.btn-primary span {
+    // font-family: "Expansiva";
+    font-family: Abel;
+  }
+
+  &.btn-secondary {
+    color: #fff;
+    // border:2px solid  linear-gradient(97deg, #D10ED1 12.04%, #10A3DA 81.84%);
+    border: 2px solid transparent; /* Set a border width */
+
+    padding-top: 0.75rem; /* or 12px */
+    padding-bottom: 0.75rem;
+    border-radius: 1.5rem;
+    border-image: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%) 1; /* Gradient border */
+  }
+
+  &.btn-secondary span {
+    // font-family: "Expansiva";
+    font-family: Abel;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  @keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+// linera gradient bg
+.mx-bg-gradient {
+  background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+}
+
+.text-expansiva span {
+  font-family: "Expansiva";
+}

@@ -1,0 +1,31 @@
+.opacityLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  z-index: 5; /* Ensure it overlays above other elements */
+}
+.shadow {
+  position: absolute;
+  top: 12px;
+  background: #ad1aaf;
+  opacity: 0.5;
+  filter: blur(229.17px);
+  width: 480px;
+  height: 773px;
+  z-index: 10;
+
+  &.right-shadow {
+    right: -50px;
+  }
+
+  &.left-shadow {
+    left: -50px;
+  }
+}

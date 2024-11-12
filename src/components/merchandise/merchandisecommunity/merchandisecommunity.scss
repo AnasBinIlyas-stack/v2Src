@@ -1,0 +1,17 @@
+.merchandisecommunity-sec {
+  background: url("/assets/images/merchandisecommunity.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px;
+  .inner {
+    max-width: 1290px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .merchandisecommunity-sec {
+    padding: 20px;
+  }
+}

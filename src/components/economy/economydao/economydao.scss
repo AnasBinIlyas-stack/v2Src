@@ -1,0 +1,87 @@
+.economydao-sec {
+  padding: 116px 80px 0px 80px;
+  background-color: var(--backgroundcolor);
+  background-image: url("/assets/images/economydao.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .inner {
+    max-width: 1314px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 36px;
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      column-gap: 70px;
+      .top-left {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 211px;
+          height: 188px;
+          object-fit: cover;
+        }
+      }
+      .top-right {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        p {
+          margin-top: 4px;
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      column-gap: 70px;
+      .bottom-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      .bottom-right {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img {
+          width: 131px;
+          height: 191px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .economydao-sec {
+    padding: 80px 80px 0px 80px;
+    .inner {
+      max-width: 1200px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .top {
+        column-gap: 30px;
+        .top-right {
+          row-gap: 10px;
+        }
+      }
+      .bottom {
+        column-gap: 30px;
+        .bottom-left {
+          row-gap: 10px;
+        }
+      }
+    }
+  }
+}

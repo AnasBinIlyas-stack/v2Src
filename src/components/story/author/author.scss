@@ -1,0 +1,113 @@
+.author-sec {
+  padding: 50px 80px;
+  background: var(--backgroundcolor);
+  position: relative;
+  .author-left {
+    position: absolute;
+    top: -70px;
+    left: -300px;
+  }
+  .author-right {
+    position: absolute;
+    top: -70px;
+    right: -300px;
+  }
+  .inner {
+    max-width: 1270px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 100px;
+    .content {
+      display: flex;
+      align-items: center;
+      column-gap: 50px;
+      justify-content: space-between;
+      .right {
+        max-width: 617px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        h5 {
+          margin-bottom: 4px;
+          font-style: italic;
+          position: relative;
+          z-index: 2;
+        }
+        p,
+        h4 {
+          position: relative;
+          z-index: 2;
+        }
+      }
+      .left {
+        width: 40%;
+        max-width: 500px;
+        img {
+          width: 100%;
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .author-sec {
+    .inner {
+      row-gap: 40px;
+      .content {
+        column-gap: 30px;
+        .right {
+          max-width: 600px;
+          width: 55%;
+        }
+        .left {
+          max-width: 500px;
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .author-sec {
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .inner {
+      width: 100%;
+      row-gap: 20px;
+      .content {
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: center;
+        .right {
+          max-width: 617px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          h5,
+          h4,
+          p {
+            margin-bottom: 0px;
+            text-align: center;
+          }
+        }
+        .left {
+          width: 100%;
+          max-width: unset;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

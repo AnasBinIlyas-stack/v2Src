@@ -1,0 +1,28 @@
+.navbar-sec {
+  .navbtn {
+    padding: 4px 10px !important;
+  }
+}
+// .ant-drawer {
+//   .ant-drawer-content-wrapper {
+//     display: none;
+//   }
+// }
+.ant-drawer {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .desktop-nav {
+    display: none;
+  }
+  .ant-drawer {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ant-drawer {
+    .ant-drawer-content-wrapper {
+      max-width: 300px;
+    }
+  }
+}

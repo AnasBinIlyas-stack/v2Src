@@ -1,0 +1,81 @@
+.marketplacebanner-sec {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/images/hero.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: var(--backgroundcolor);
+  padding: 0px 80px;
+  padding-bottom: 20px;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0px auto;
+    margin-top: auto;
+
+    .headings {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 10px;
+      .banner-img {
+        max-width: 516px;
+        max-height: 516px;
+        object-fit: cover;
+        animation: brightnessAnimation 3s infinite;
+        animation-timing-function: ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .marketplacebanner-sec {
+    .inner {
+      .headings {
+        .banner-img {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .marketplacebanner-sec {
+    padding: 0px 20px;
+    padding-bottom: 30px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    height: 80vh;
+    .inner {
+      margin-top: unset;
+      .headings {
+        .banner-img {
+          max-width: 250px;
+          height: 100%;
+          max-height: unset;
+        }
+      }
+    }
+  }
+}
+@keyframes brightnessAnimation {
+  0% {
+    filter: brightness(0.7);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(0.7);
+  }
+}

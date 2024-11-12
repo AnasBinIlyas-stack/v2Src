@@ -1,0 +1,46 @@
+.cardcomp-sec {
+  background: url("/assets/images/cardcomp.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+  padding: 46px 50px;
+  h3 {
+    max-width: 1026px;
+    margin: 0px auto;
+  }
+  p {
+    max-width: 1173px;
+    margin: 0px auto;
+    line-height: normal;
+  }
+  .paras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .cardcomp-sec {
+    .paras {
+      row-gap: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .cardcomp-sec {
+    background: unset;
+    row-gap: 10px;
+    padding: 0px;
+    h3,
+    p {
+      text-align: center;
+    }
+  }
+}

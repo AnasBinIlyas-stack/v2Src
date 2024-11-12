@@ -1,0 +1,196 @@
+* {
+  font-family: "Inter";
+  line-height: normal;
+}
+
+body {
+  h1 {
+    font-size: 36px; // Mobile default
+    font-weight: 700;
+    font-family: Abel;
+
+    @media (min-width: 640px) {
+      // Tablet
+      font-size: 48px;
+    }
+
+    @media (min-width: 768px) {
+      // Medium screens
+      font-size: 60px;
+    }
+
+    @media (min-width: 1024px) {
+      // Large screens
+      font-size: 72px;
+    }
+  }
+
+  h2 {
+    font-size: 28px; // Mobile default
+    font-weight: 700;
+    font-family: Abel;
+
+    @media (min-width: 640px) {
+      font-size: 36px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 44px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 52px;
+    }
+  }
+
+  h3 {
+    font-size: 24px; // Mobile default
+    font-family: Abel;
+
+    @media (min-width: 640px) {
+      font-size: 28px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 36px;
+    }
+  }
+
+  h4 {
+    font-size: 18px; // Mobile default
+    font-family: Abel;
+    font-weight: 400;
+
+    @media (min-width: 640px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  h5 {
+    font-size: 16px; // Mobile default
+    font-family: Abel;
+    font-weight: 400;
+
+    @media (min-width: 640px) {
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
+  }
+
+  p {
+    font-size: 14px; // Mobile default
+    color: #fff;
+    font-family: Abel;
+    font-weight: 400;
+    line-height: 22px;
+
+    @media (min-width: 640px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .medium {
+    font-size: 12px; // Mobile default
+
+    @media (min-width: 640px) {
+      font-size: 14px;
+    }
+  }
+
+  .small {
+    font-size: 10px; // Mobile default
+
+    @media (min-width: 640px) {
+      font-size: 12px;
+    }
+  }
+
+  span {
+    font-size: 14px; // Mobile default
+    color: #fff;
+    text-align: center;
+    font-family: Abel !important;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media (min-width: 640px) {
+      font-size: 16px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+  }
+}
+
+// Other styles remain the same...
+
+.font-Pacifico {
+  font-family: "Pacifico", "Inter";
+}
+.text-expansiva {
+  font-family: "Expansiva";
+}
+.text-expansivaBold {
+  font-family: "ExpansExpansiva-Bold";
+}
+
+// for two comibnation linearGradient color
+.color-mixture {
+  background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+// background layer
+.bg-shadow {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10; /* This will apply a semi-transparent black color */
+}
+.bg-LightShadow {
+  background: rgba(0, 0, 0, 0.4);
+
+  z-index: 10;
+}
+.bgHomeFourth {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}

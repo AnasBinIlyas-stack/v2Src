@@ -1,0 +1,11 @@
+.App{
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+.select-staking-btn {
+    background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}

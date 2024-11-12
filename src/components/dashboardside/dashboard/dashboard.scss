@@ -1,0 +1,279 @@
+.dashboard-side {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  padding: 0px 20px 20px 0px;
+  .left-side {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .left-top {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      .left {
+        max-width: 299px;
+        width: 100%;
+        .ist {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .detail {
+            padding: 22px 15px;
+            display: flex;
+            gap: 25px;
+            width: 100%;
+            border-radius: 9.454px;
+            border: 1.576px solid #d10ed1;
+            background: linear-gradient(
+              97deg,
+              rgba(209, 14, 209, 0.25) 12.04%,
+              rgba(16, 163, 218, 0.25) 81.84%
+            );
+            position: relative;
+            .launching-soon {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              padding: 1px 3px;
+              border-radius: 14px;
+              border: 0.7px solid #cf10d2;
+              background: rgba(207, 16, 210, 0.67);
+              box-shadow: 0px 2.798px 2.798px 0px rgba(0, 0, 0, 0.25);
+              backdrop-filter: blur(9.060079574584961px);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              // gap: 11px;
+              p {
+                color: #fff;
+                font-family: "Expansiva";
+                font-size: 6px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+      .middle {
+        //   max-width: 531px;
+        width: 100%;
+        border-radius: 9.454px;
+        border: 1.576px solid #d10ed1;
+      }
+    }
+    .left-bottom {
+      position: relative;
+      .dashside-content {
+        width: 100%;
+        margin-top: 0;
+        .merchandisedash-sec {
+          padding: 0;
+          row-gap: 10px;
+          .merchandise-cards {
+            grid-template-columns: repeat(4, 1fr);
+            // height: 400px;
+            // overflow-y: scroll;
+          }
+          .sec-header {
+            .right {
+              display: none;
+            }
+          }
+        }
+      }
+      .view-btn {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+      }
+    }
+  }
+  .right-side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .right-side-content {
+      padding: 15px;
+      //   width: 254px;
+      max-height: 440px;
+      overflow-y: auto;
+      border-radius: 9.454px;
+      border: 1.576px solid #d10ed1;
+      background: linear-gradient(
+        97deg,
+        rgba(209, 14, 209, 0.25) 12.04%,
+        rgba(16, 163, 218, 0.25) 81.84%
+      );
+
+      .right-side-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        .inner-content {
+          padding: 5px;
+          border-radius: 8px;
+          border: 1px solid #4f4f4f;
+          display: flex;
+          gap: 5px;
+          width: 100%;
+          .left-content {
+            border-radius: 100%;
+            padding: 6px;
+            background: rgba(0, 8, 24, 0.42);
+            img {
+              width: 28px;
+              border-radius: 100%;
+              height: 26.698px;
+            }
+          }
+          .right-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            img {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .hide-border {
+          border: none;
+        }
+        .view-btn {
+          max-width: 120px;
+          background: linear-gradient(
+            97deg,
+            rgba(209, 14, 209, 0.25) 12.04%,
+            rgba(16, 163, 218, 0.25) 81.84%
+          );
+        }
+        .start-chatting {
+          position: relative;
+          width: 100%;
+          input {
+            width: 100%;
+            border-radius: 9.454px;
+            background: rgba(0, 8, 24, 0.42);
+            padding: 11px 30px 11px 15px;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &::placeholder {
+              color: #cbcbcb;
+            }
+          }
+          .send-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background: transparent;
+            border: none;
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .dashboard-side {
+    .left-side {
+      width: 70%;
+      .left-bottom {
+        .dashside-content {
+          .merchandisedash-sec {
+            .merchandise-cards {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      width: 30%;
+    }
+  }
+}
+@media screen and (max-width: 1260px) {
+  .dashboard-side {
+    .left-side {
+      .left-top {
+        flex-direction: column;
+        .left {
+          max-width: 100%;
+        }
+      }
+      .left-bottom {
+        .dashside-content {
+          .merchandisedash-sec {
+            .merchandise-cards {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+        }
+        .view-btn {
+          top: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .dashboard-side {
+    flex-direction: column-reverse;
+    padding: 0;
+    position: relative;
+    .left-side {
+      width: 100%;
+      .left-bottom {
+        .dashside-content {
+          .merchandisedash-sec {
+            .merchandise-cards {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+        }
+      }
+    }
+    .right-side {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .dashboard-side {
+    padding: 0;
+    .left-side {
+      .left-bottom {
+        .dashside-content {
+          .merchandisedash-sec {
+            .merchandise-cards {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        }
+      }
+    }
+  }
+}

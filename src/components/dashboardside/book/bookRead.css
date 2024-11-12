@@ -1,0 +1,27 @@
+.books-show {
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(209, 14, 209, 0.1);
+        border-radius: 9.454px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(97deg,
+                rgba(209, 14, 209, 1) 12.04%,
+                rgba(16, 163, 218, 1) 81.84%);
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(97deg,
+                rgba(209, 14, 209, 0.9) 12.04%,
+                rgba(16, 163, 218, 0.9) 81.84%);
+    }
+
+    /* Scrollbar styling for Firefox */
+    scrollbar-color: rgba(209, 14, 209, 1) rgba(209, 14, 209, 0.1);
+    scrollbar-width: thin;
+}

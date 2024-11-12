@@ -1,0 +1,105 @@
+.game-sec {
+  width: 100vw;
+  height: 100vh;
+  background: url(/assets/images/dashboard/Game.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  p {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+  }
+  .game-inner {
+    background: url(/assets/images/dashboard/gamecard.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    max-width: 1180px;
+    padding: 120px 80px 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      text-align: center;
+      font-size: 72px;
+    }
+    .card-img {
+      width: 100%;
+      height: 100%;
+      max-width: 420px;
+      max-height: 392px;
+      object-fit: contain;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .game-sec {
+    .game-inner {
+      max-width: 880px;
+      padding: 100px 40px 40px 40px;
+      max-height: 600px;
+      h1 {
+        font-size: 50px;
+      }
+      .card-img {
+        width: 100%;
+        height: 100%;
+        max-width: 450px;
+        max-height: 322px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .game-sec {
+    .game-inner {
+      padding: 60px 40px 30px 40px;
+      max-height: 500px;
+      h1 {
+        font-size: 35px;
+      }
+      .card-img {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 292px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .game-sec {
+    padding: 60px 20px;
+    p {
+      top: 20px;
+      left: 20px;
+    }
+    .game-inner {
+      padding: 20px;
+      justify-content: center;
+      row-gap: 40px;
+      background: unset;
+      h1 {
+        font-size: 22px;
+      }
+      .card-img {
+        width: 100%;
+        height: 100%;
+        max-width: 400px;
+        max-height: 292px;
+        object-fit: contain;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.nft-detail {
+  background-image: url("../../../../../public/assets/images/nftmarketplace/createNft-back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 215px 80px;
+  .nft-content {
+    padding: 44px 44px 119px 57px;
+    max-width: 1320px;
+    width: 100%;
+    border-radius: 18.42px;
+    border: 4px solid #d10ed1;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12.949999809265137px);
+    position: relative;
+    .left-content {
+      width: 50%;
+      img {
+        max-width: 486px;
+        width: 100%;
+      }
+    }
+    .right-content {
+      width: 50%;
+      position: relative;
+      .value-fields {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 13px;
+        .field {
+          padding: 14px;
+          max-width: 305.906px;
+          width: 100%;
+          border-radius: 10px;
+          border: 1px solid #fff;
+          background: rgba(255, 255, 255, 0.08);
+        }
+      }
+      .description {
+        padding: 13px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.08);
+        width: 100%;
+        height: 213px;
+        overflow-y: scroll;
+        &::-webkit-scrollbar {
+          width: 3px;
+          border-radius: 22px;
+          box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.04);
+        }
+        &::-webkit-scrollbar-thumb {
+          width: 3px;
+          height: 85px;
+          border-radius: 21px;
+          background: #d9d9d9;
+        }
+        p {
+          line-height: normal;
+        }
+      }
+      &::after {
+        content: url("../../../../../public/assets/images/nftmarketplace/middle-line.png");
+        position: absolute;
+        top: 30px;
+        left: -45px;
+      }
+    }
+    .close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nft-detail {
+    padding: 140px 80px;
+    gap: 60px;
+    .nft-content {
+      padding: 45px;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nft-detail {
+    .nft-content {
+      gap: 40px;
+      padding: 45px 30px;
+      .right-content {
+        &::after {
+          left: -25px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 980px) {
+  .nft-detail {
+    padding: 100px 20px 50px 20px;
+    gap: 20px;
+    .nft-content {
+      max-width: 100%;
+      flex-direction: column-reverse;
+      padding: 30px 20px;
+      gap: 20px;
+      .left-content {
+        width: 100%;
+        gap: 20px;
+      }
+      .right-content {
+        width: 100%;
+        gap: 20px;
+        .value-fields {
+          grid-template-columns: repeat(1, 1fr);
+          .field {
+            max-width: 100%;
+          }
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.movie-sec {
+  width: 100vw;
+  height: 100vh;
+  background: url(/assets/images/dashboard/movieback.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px;
+  p {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    cursor: pointer;
+  }
+  .movie-inner {
+    max-width: 1180px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    border-radius: 18.42px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(9.350000381469727px);
+    background: url(/assets/images/dashboard/moviecard.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    row-gap: 35px;
+    h1 {
+      text-align: center;
+      font-size: 72px;
+    }
+    .movie-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 3px;
+      background-image: url(/assets/images/dashboard/playbtnback.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border: none;
+      background-color: transparent;
+      width: 279px;
+      height: 70px;
+    }
+  }
+}
+@media screen and (max-width: 1280px) {
+  .movie-sec {
+    .movie-inner {
+      max-width: 980px;
+
+      h1 {
+        font-size: 50px;
+      }
+      .movie-btn {
+        width: 220px;
+        height: 60px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .movie-sec {
+    .movie-inner {
+      row-gap: 20px;
+      background-image: unset;
+      border: 2px solid var(--Gradient, #d10ed1);
+
+      h1 {
+        font-size: 35px;
+      }
+      .movie-btn {
+        width: 180px;
+        height: 50px;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .movie-sec {
+    padding: 60px 20px;
+    .movie-inner {
+      padding: 20px;
+      row-gap: 10px;
+      max-height: 500px;
+      h1 {
+        font-size: 22px;
+      }
+      .movie-btn {
+        width: 140px;
+        height: 40px;
+
+        img {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}

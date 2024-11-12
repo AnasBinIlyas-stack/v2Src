@@ -1,0 +1,26 @@
+.recruitment-saga {
+  // background: url("/assets/images/saga.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 50px 80px 160px 80px;
+  .inner {
+    max-width: 1290px;
+    margin: 0px auto;
+    .cardcomp-sec {
+      h5 {
+        color: #fab863 !important;
+        font-style: italic !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .recruitment-saga {
+    padding: 20px;
+    .inner {
+      width: 100%;
+    }
+  }
+}

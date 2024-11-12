@@ -1,0 +1,119 @@
+.gamingslider-sec {
+  /** Swiper styles **/
+  background: var(--backgroundcolor);
+  padding: 80px 40px 80px 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 160px;
+  position: relative;
+  .swiper {
+    user-select: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+
+    height: 300px;
+
+    padding: 0px 0px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+
+  .swiper-slide-bg-image {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .swiper-slide-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .swiper-slide-cf25 {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 8px;
+  }
+  .swiper-slide-bg-image-c61b {
+    object-fit: fill;
+    border-radius: inherit;
+  }
+  .swiper-slide-content-64d1 {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 24px 24px;
+    gap: 0px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .swiper-btn {
+    position: relative;
+    top: -50px;
+  }
+  .custom-prev-button {
+    width: 74px;
+    height: 64px;
+    // position: absolute;
+    // bottom: 0;
+    // left: 45%;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .custom-next-button {
+    width: 74px;
+    height: 64px;
+    // position: absolute;
+    // bottom: 0;
+    // right: 45%;
+    cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+  .swiper {
+    width: 100%;
+
+    height: 300px;
+
+    padding: 0px 0px;
+  }
+
+  .swiper-slide {
+    width: 33%;
+    height: 100%;
+  }
+
+  :root {
+    --swiper-navigation-top-offset: 50%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .gamingslider-sec {
+    padding-bottom: 0;
+    row-gap: 20px;
+    padding: 20px;
+    .swiper-btn {
+      position: relative;
+      top: 0px;
+    }
+  }
+}

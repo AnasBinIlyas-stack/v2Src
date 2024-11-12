@@ -1,0 +1,94 @@
+.audioBook-sec {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  .center {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    .main-img {
+      max-width: 280px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .detail {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      max-width: 476px;
+      width: 100%;
+      .small {
+        color: #cbcbcb;
+        line-height: 130%;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        column-gap: 7px;
+
+        img {
+          width: 45px;
+          height: 45px;
+          object-fit: cover;
+        }
+      }
+      button {
+        width: fit-content;
+        padding: 7px 26px;
+        border-radius: 23.11px;
+        background: linear-gradient(93deg, #d10ed1 2.94%, #10a3da 95.39%);
+        font-size: 12px;
+        font-style: normal;
+        line-height: normal;
+        border: none;
+      }
+    }
+  }
+
+  .treaser {
+    display: flex;
+    // justify-content: space-between;
+
+    flex-direction: column;
+    row-gap: 23px;
+    .btn {
+      display: flex;
+      justify-content: space-between;
+      h5 {
+        background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: fit-content;
+      }
+    }
+
+    .treaser-cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 30px;
+    }
+  }
+  .btnBg {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // padding: 6px 25px;
+    // max-width: 200px;
+    // width: 100%;
+    // border: 2px solid transparent;
+    // border-radius: 35px;
+    // background: linear-gradient(97deg, #d10ed1 12.04%, #10a3da 81.84%);
+    // cursor: pointer;
+    
+    color: white;
+    width: fit-content;
+    padding: 7px 26px;
+    border-radius: 23.11px;
+    background: linear-gradient(93deg, #d10ed1 2.94%, #10a3da 95.39%);
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    border: none;
+  }
+}

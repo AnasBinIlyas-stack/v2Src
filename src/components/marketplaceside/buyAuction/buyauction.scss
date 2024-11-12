@@ -1,0 +1,80 @@
+.auction-sec {
+    padding: 300px 80px 200px 80px;
+    background-color: var(--backgroundcolor);
+    background-image: url("/assets/images/auctionback.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .auc-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 96px;
+      max-width: 1320px;
+      margin: 0px auto;
+      h1 {
+        width: fit-content;
+        margin: 0px auto;
+      }
+      .nft-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 31px;
+        h3 {
+          width: fit-content;
+        }
+        .nft-cards {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 52px 37px;
+          p{
+            color: white;        
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .auction-sec {
+      padding: 200px 80px 100px 80px;
+      .auc-inner {
+        row-gap: 80px;
+        max-width: 1000px;
+        .nft-content {
+          row-gap: 30px;
+          .nft-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 30px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    .auction-sec {
+      padding: 100px 20px 50px 20px;
+      .auc-inner {
+        row-gap: 20px;
+        h1 {
+          width: fit-content;
+          margin: 0px auto;
+        }
+        .nft-content {
+          row-gap: 10px;
+          h3 {
+            width: fit-content;
+            margin: 0px auto;
+          }
+          .nft-cards {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            place-items: center;
+          }
+        }
+      }
+    }
+  }
+  

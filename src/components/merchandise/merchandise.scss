@@ -1,0 +1,36 @@
+.merchandise-sec {
+  max-width: 100vw;
+  overflow-x: hidden;
+  .merchandise-content {
+    position: relative;
+    .left-back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 30vw;
+    }
+    .right-back {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 30vw;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .merchandise-sec {
+    .merchandise-content {
+      .left-back {
+        display: none;
+      }
+      .right-back {
+        display: none;
+      }
+    }
+  }
+}

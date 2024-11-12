@@ -1,0 +1,67 @@
+.dashboardcard-sec {
+  max-width: 300px;
+  background-image: url(/assets/images/dashboard/dashboardcardback.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    padding: 7px 10px 20px 10px;
+    .top {
+      display: flex;
+      padding: 50px 10px;
+      background-image: url(/assets/images/dashboard/dashboardcardtopback.webp);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      .card-layer {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        height: 75px;
+        background: #fab863;
+        filter: blur(29.491640090942383px);
+        border-radius: 50%;
+        z-index: 2;
+      }
+      img {
+        width: 100%;
+        max-width: 135.509px;
+        height: 101px;
+        object-fit: contain;
+        margin: 0px auto;
+        position: relative;
+        z-index: 3;
+      }
+    }
+    .center {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      .large-para {
+        font-size: 11.6px;
+      }
+      .small-para {
+        font-size: 9px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+      }
+    }
+    .bottom {
+      border-radius: 23.11px;
+      background: var(--main-color);
+      padding: 7px 10px;
+      width: 100%;
+      border: none;
+    }
+  }
+}
